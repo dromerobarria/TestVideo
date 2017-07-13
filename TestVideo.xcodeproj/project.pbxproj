@@ -14,6 +14,11 @@
 		FE3DC6041F16F9A300BF81BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3DC6021F16F9A300BF81BC /* LaunchScreen.storyboard */; };
 		FE3DC60F1F16F9A300BF81BC /* TestVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DC60E1F16F9A300BF81BC /* TestVideoTests.swift */; };
 		FE3DC61A1F16F9A300BF81BC /* TestVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DC6191F16F9A300BF81BC /* TestVideoUITests.swift */; };
+		FE3DC6281F16FE7A00BF81BC /* Mannequin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FE3DC6271F16FE7A00BF81BC /* Mannequin.mp4 */; };
+		FE3DC62A1F16FFD000BF81BC /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3DC6291F16FFD000BF81BC /* image.png */; };
+		FE3DC62C1F172E1800BF81BC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DC62B1F172E1800BF81BC /* Utils.swift */; };
+		FE3DC62F1F172F0000BF81BC /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DC62E1F172F0000BF81BC /* Constans.swift */; };
+		FE3DC6311F1733B400BF81BC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DC6301F1733B400BF81BC /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		FE3DC6151F16F9A300BF81BC /* TestVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3DC6191F16F9A300BF81BC /* TestVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVideoUITests.swift; sourceTree = "<group>"; };
 		FE3DC61B1F16F9A300BF81BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE3DC6271F16FE7A00BF81BC /* Mannequin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mannequin.mp4; sourceTree = "<group>"; };
+		FE3DC6291F16FFD000BF81BC /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		FE3DC62B1F172E1800BF81BC /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FE3DC62E1F172F0000BF81BC /* Constans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		FE3DC6301F1733B400BF81BC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE231BE61F17CB9C0075913F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FE3DC5FD1F16F9A300BF81BC /* Main.storyboard */,
+				FE3DC6021F16F9A300BF81BC /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		FE231BE71F17CBA40075913F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE3DC5FB1F16F9A300BF81BC /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FE231BE81F17CBAD0075913F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FE3DC62E1F172F0000BF81BC /* Constans.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		FE231BE91F17CBC40075913F /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				FE3DC6291F16FFD000BF81BC /* image.png */,
+				FE3DC6271F16FE7A00BF81BC /* Mannequin.mp4 */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
 		FE3DC5ED1F16F9A300BF81BC = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +142,13 @@
 			isa = PBXGroup;
 			children = (
 				FE3DC5F91F16F9A300BF81BC /* AppDelegate.swift */,
-				FE3DC5FB1F16F9A300BF81BC /* ViewController.swift */,
-				FE3DC5FD1F16F9A300BF81BC /* Main.storyboard */,
 				FE3DC6001F16F9A300BF81BC /* Assets.xcassets */,
-				FE3DC6021F16F9A300BF81BC /* LaunchScreen.storyboard */,
 				FE3DC6051F16F9A300BF81BC /* Info.plist */,
+				FE231BE71F17CBA40075913F /* Controllers */,
+				FE231BE61F17CB9C0075913F /* Storyboards */,
+				FE3DC62D1F172E1C00BF81BC /* Utils */,
+				FE231BE81F17CBAD0075913F /* Constants */,
+				FE231BE91F17CBC40075913F /* Media */,
 			);
 			path = TestVideo;
 			sourceTree = "<group>";
@@ -123,6 +169,15 @@
 				FE3DC61B1F16F9A300BF81BC /* Info.plist */,
 			);
 			path = TestVideoUITests;
+			sourceTree = "<group>";
+		};
+		FE3DC62D1F172E1C00BF81BC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FE3DC62B1F172E1800BF81BC /* Utils.swift */,
+				FE3DC6301F1733B400BF81BC /* Extensions.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE3DC6041F16F9A300BF81BC /* LaunchScreen.storyboard in Resources */,
+				FE3DC6281F16FE7A00BF81BC /* Mannequin.mp4 in Resources */,
 				FE3DC6011F16F9A300BF81BC /* Assets.xcassets in Resources */,
 				FE3DC5FF1F16F9A300BF81BC /* Main.storyboard in Resources */,
+				FE3DC62A1F16FFD000BF81BC /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +316,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3DC6311F1733B400BF81BC /* Extensions.swift in Sources */,
 				FE3DC5FC1F16F9A300BF81BC /* ViewController.swift in Sources */,
 				FE3DC5FA1F16F9A300BF81BC /* AppDelegate.swift in Sources */,
+				FE3DC62F1F172F0000BF81BC /* Constans.swift in Sources */,
+				FE3DC62C1F172E1800BF81BC /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +565,7 @@
 				FE3DC6201F16F9A300BF81BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE3DC6211F16F9A300BF81BC /* Build configuration list for PBXNativeTarget "TestVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +574,7 @@
 				FE3DC6231F16F9A300BF81BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE3DC6241F16F9A300BF81BC /* Build configuration list for PBXNativeTarget "TestVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +583,7 @@
 				FE3DC6261F16F9A300BF81BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
